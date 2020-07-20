@@ -11,8 +11,26 @@ body
 {
     background-color: #959595;
 }
-.square
-{
-    background-color: red;
-    width: 25%;
+
+a {
+    background-color: #959595;
+    transition: background-color .5s;
+  }
+  
+  a:hover {
+    background-color: gold;
+  }
+  
+* {
+    box-sizing: border-box;
+  }
+ 
+ ul 
+ {
+     list-style: none;
+     padding: 0;
+ }
+ li
+ {
+     
 }
