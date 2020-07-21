@@ -1,10 +1,29 @@
-function addNewItem(list, itemText) {
-    var listItem = document.createElement("li");
-    listItem.innerText =itemText;
-
-    list.appendChild(listItem);     
+function updateItemStatus(){
+    var cbID
 }
+function addNewItem(list, itemText) {
+    totalItems++;
+    var listItem = document.createElement("li");
+    var checkBox = document.createElement("input"); 
+    checkBox.type = "checkbox";
+    checkBox.id = "cb_" + totalItems;
+    checkBox.onclick = updateItemStatus;
 
+
+    var span = document.createElement("span");
+    span.id ="item_" + totalItems;
+    span.innerText = itemText; 
+
+    listItem.appendChild(checkBox);
+    listItem.appendChild(span);
+
+
+    list.appendChild(listItem);    
+    
+   
+};
+
+var totalItems = 0;
 var inItemText =document.getElementById("inItemText");
 inItemText.focus();
 inItemText.onkeyup = function(event) {
