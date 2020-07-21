@@ -1,5 +1,16 @@
 function updateItemStatus(){
-    var cbID
+    var cbID = this.id.replace(cb_, "");
+    var itemText = document.getElementById("item_" + cbID);
+    
+
+
+    if(this.checked) {
+        itemText.style.textDecoration ="line-trought";
+
+    }else {
+        itemText.style.textDecoration ="none    ";
+
+    }
 }
 function addNewItem(list, itemText) {
     totalItems++;
