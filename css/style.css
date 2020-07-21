@@ -17,4 +17,17 @@ a {
     transition: background-color .5s;
   }
   
+.menu
+{
+    background-color: pink;
+    width: 150px;
+}
 
+.menu:hover
+{
+    background-color: red;
+    width: 150px;
+}
+menu:active {
+        background: yellow
+}
