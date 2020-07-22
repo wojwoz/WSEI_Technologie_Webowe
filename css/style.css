@@ -19,7 +19,7 @@ a {
   
 .menu
 {
-    background-color: pink;
+    background-color: #959595;
     width: 150px;
 }
 
@@ -28,6 +28,10 @@ a {
     background-color: red;
     width: 150px;
 }
-menu:active {
-        background: yellow
-}
+
+  
+  .active 
+  {
+    background-color: #454545;
+    width: 150px;
+  }

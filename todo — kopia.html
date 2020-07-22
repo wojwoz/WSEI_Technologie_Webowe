@@ -29,40 +29,26 @@
             </button>
             <div class="collapse navbar-collapse" id="main">
                 <div>
-                    <ul class="navbar-nav ">
-                        <li class="nav-item  px-5 ">
+                    <ul class="navbar-nav menu">
+                        <li class="nav-item square px-5 ">
                         
-                            <a class="nav-link active" href="index.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 7.093v-5.093h-3v2.093l3 3zm4 5.907l-12-12-12 12h3v10h7v-5h4v5h7v-10h3zm-5 8h-3v-5h-8v5h-3v-10.26l7-6.912 7 6.99v10.182z"/></svg>
-                                start
-                            </a>                            
+                            <a class="nav-link" href="index.html">start</a>                            
                         
                         </li>
-                        <li class="nav-item  px-5"> 
-                                <a class="nav-link menu  " href="todo.html">
+                        <li class="nav-item square px-5">
+                            <div class="menu active">
+                                <a class="nav-link" href="todo.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 1h17v2h-17v-2zm0 7h17v-2h-17v2zm0 5h17v-2h-17v2zm0 5h17v-2h-17v2zm0 5h17v-2h-17v2zm-5-22c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm0 9c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm0 9c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z"/></svg>
                                     todo
                                 </a>
-                                    
+                            </div>   
                         </li>
-                        <li class="nav-item  px-5">
-                                <a class="nav-link menu" href="img.html">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 8.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5zm9 .5l-2.519 4-2.481-1.96-4 5.96h14l-5-8zm8-4v14h-20v-14h20zm2-2h-24v18h24v-18z"/></svg>
-                                    image</a> 
+                        <li class="nav-item square px-5">
+                                <a class="nav-link" href="img.html">image</a> 
                         </li>
-                        <li class="nav-item  px-5">
+                        <li class="nav-item square px-5">
                         
-                            <a class="nav-link menu" href="film.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg>
-                                fim
-                            </a>
-                           
-                        </li>
-                        <li class="nav-item  px-5">
-                        
-                            <a class="nav-link menu" href="film.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3h-24v-2h24v2zm-12 3h-12v2h12v-2zm12 5h-24v2h24v-2zm-12 5h-12v2h12v-2zm12 5h-24v2h24v-2z"/></svg>                                tekst
-                            </a>
+                            <a class="nav-link" href="film.html">fim</a>
                            
                         </li>
 
@@ -75,17 +61,27 @@
     </header>
     <main>
         <section class="sekcja">
-            <di class="container">
+            <div class="container">
                 <div class="row">
-                    <div>
+                    <div class="col-md-12">
+                        <h1>todo list</h1> 
+                        <p><input type="text" id="inItemText"/> </p>
 
+                        <ul id="todolist"></ul>
+                        
+                      
+                                              
                     </div>
 
                 </div>
-
-            </di>
+            </div>
         </section>
+        
+
+    </div>
     </main>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -95,6 +91,7 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/todo.js"></script>
 </body>
 
 </html>
