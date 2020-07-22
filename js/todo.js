@@ -2,7 +2,7 @@ function updateItemStatus(){
     var cbID = this.id.replace(cb_, "");
     var itemText = document.getElementById("item_" + cbID);
     
-
+    
 
     if(this.checked) {
         itemText.style.textDecoration ="line-trought";

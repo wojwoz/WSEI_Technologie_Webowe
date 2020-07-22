@@ -39,6 +39,20 @@ a {
 
   #zegar
   {
-      font-size: large;
+      max-width: auto;
+      font-size: 200%;
       color: silver;
   }
+
+  #todo
+  {
+      margin: auto;
+      color: red;
+  }
+
+  #todolist
+  {
+      margin: auto;
+      padding: 20%;
+  }
+  
