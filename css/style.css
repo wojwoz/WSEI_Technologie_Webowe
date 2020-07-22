@@ -1,6 +1,7 @@
 body
 {
     background-color: #1a1a1a;
+    color: silver;
 }
 
 .sekcja
@@ -34,4 +35,10 @@ a {
   {
     background-color: #454545;
     width: 150px;
+  }
+
+  #zegar
+  {
+      font-size: large;
+      color: silver;
   }
